@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# React Globe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![cover](https://user-images.githubusercontent.com/26682297/193670814-9fe9b358-a2d2-4c19-a310-b2588615ffb4.gif)
 
-## Available Scripts
+This project was created with the intention of studying and improving Javascript development techniques. The Globe is based on what is presented on the `GitHub` homepage.
 
-In the project directory, you can run:
+## ✨ Technologies
 
-### `yarn start`
+This project was developed with the following technologies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- Next.js
+- TypeScript
+- Three
+- Three-globe
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 How to run
 
-### `yarn test`
+- Clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/igorssc/react-globe.git
 
-### `yarn build`
+cd react-globe
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# or
 
-### `yarn eject`
+npm init
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Start the server
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# or
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm run start
+```
 
-## Learn More
+You can now access [`localhost:3000`](http://localhost:3000) from your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Options`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can change animation settings via the `config.globe.ts` file
+
+`globeConfig:`
+
+| Name                 | Type    | Default                 |
+| -------------------- | ------- | ----------------------- |
+| pointSize            | number  | 1                       |
+| globeColor           | string  | "#062056"               |
+| showAtmosphere       | boolean | true                    |
+| atmosphereColor      | string  | "#ffffff"               |
+| atmosphereAltitude   | number  | 0.1                     |
+| emissive             | string  | "#000000"               |
+| emissiveIntensity    | number  | 0.1                     |
+| shininess            | number  | 0.9                     |
+| polygonColor         | string  | "rgba(255,255,255,0.7)" |
+| ambientLight         | string  | "#000000"               |
+| directionalLeftLight | string  | "#000000"               |
+| directionalTopLight  | string  | "#ffffff"               |
+| pointLight           | string  | "#ffffff"               |
+| flightTime           | number  | 1000                    |
+| flightLength         | number  | 0.9                     |
+| rings                | number  | 1                       |
+| maxRings             | number  | 3                       |
+| autoRotate           | boolean | true                    |
+| autoRotateSpeed      | number  | 0.5                     |
+| initialPosition:     |         |                         |
+| lat                  | number  | 22.3193                 |
+| lng                  | number  | 114.1694                |
+
+`flights:`
+
+| Name     | Type   | Example        |
+| -------- | ------ | -------------- |
+| order    | number | 1              |
+| from     | string | "New Delhi"    |
+| to       | string | "Kuala Lumpur" |
+| startLat | number | 28.6139        |
+| startLng | number | 77.209         |
+| endLat   | number | 3.139          |
+| endLng   | number | 101.6869       |
+| arcAlt   | number | 0.2            |
+| color    | string | "#FFFFFF"      |
+
+## 🪄 Preview
+
+Access <https://react-anim-globe.vercel.app>
+
+## 📝 Licence
+
+This project is under MIT licence. See the archive [LICENSE](LICENSE.md) to more details.
+
+---
+
+Made with 💜 by [IGS Design](https://igsdesign.com.br) - Igor Santos 👋

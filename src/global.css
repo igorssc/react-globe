@@ -1,0 +1,23 @@
+:root {
+  --background-image: url("../public/the-beautiful-shining-stars-in-the-night-sky.jpg");
+  --background-size: cover;
+  --background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background-image: var(--background-image);
+  background-size: var(--background-size);
+  background-repeat: var(--background-repeat);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
