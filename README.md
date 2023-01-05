@@ -95,7 +95,7 @@ You can change animation settings via the `config.globe.ts` file
 
 Access <https://react-anim-globe.vercel.app>
 
-## 📝 Licence
+## 📝 License
 
 This project is under MIT licence. See the archive [LICENSE](LICENSE.md) to more details.
 
